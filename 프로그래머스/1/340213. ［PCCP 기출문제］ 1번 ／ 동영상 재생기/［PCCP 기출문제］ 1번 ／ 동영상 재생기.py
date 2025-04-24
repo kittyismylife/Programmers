@@ -24,7 +24,7 @@ def solution(video_len, pos, op_start, op_end, commands):
         elif i == 'next':
             pos_sec = min(video_len_sec, pos_sec + 10)
             
-        if op_start_sec <= pos_sec <= op_end_sec:
+    if op_start_sec <= pos_sec <= op_end_sec:
             pos_sec = op_end_sec
-    
+            
     return toMinSec(pos_sec)
